@@ -19,10 +19,10 @@ function eventWork() {
             if (data.meals) {
                 data.meals.map((meal) => {
                     allItem += `<div class="col-md-3">
-                    <div class="item text-center card" mealId="${meal.idMeal}">
-                    <a href="#" class="recipe-btn text-muted text-decoration-none">
+                    <div class="item text-center  card" mealId="${meal.idMeal}">
+                    <a href="#" class="recipe-btn text-light text-decoration-none">
                         <img src = "${meal.strMealThumb}" id="meal-thumb" class="w-100 img-fluid">
-                        <p id="meal-name">${meal.strMeal}</p>
+                        <p class="mt-4" id="meal-name">${meal.strMeal}</p>
                     </a>
                     </div>
                 </div>`;
